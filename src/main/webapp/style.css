@@ -1,0 +1,52 @@
+h1{
+	border: green;
+	  background-color: yellowgreen;
+	
+	text-decoration-color: yellowgreen;
+	align-content: center;
+}
+body{
+  background-color: #6495ed;
+
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #61a31e;
+
+}
+.homeDiv {
+    border: 5px outset red;
+    background-color: lightblue;
+}
+.heading{
+    border: green;
+    text-decoration-color: yellowgreen;
+}
+.select{
+    width: 50%;
+    overflow: hidden;
+    border: 10px solid #000280;
+    background-color: #107f53;
+    margin: auto;
+    align-content: center;
+}
+

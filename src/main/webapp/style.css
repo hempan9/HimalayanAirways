@@ -1,14 +1,23 @@
+img{
+		  background-image: url('logo.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+ background-size: 200px 100px;	
+  border-radius: 50%;
+}
 h1{
 	border: green;
 	  background-color: yellowgreen;
-	
+
 	text-decoration-color: yellowgreen;
 	align-content: center;
 }
 body{
   background-color: #6495ed;
 
+
 }
+
 ul {
     list-style-type: none;
     margin: 0;

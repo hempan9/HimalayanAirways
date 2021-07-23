@@ -16,7 +16,7 @@ public class GetFlightsService {
                 allFLights) {
             if (bean.getOrigin().equalsIgnoreCase(origin)&&
                 bean.getDestination().equalsIgnoreCase(dest)
-                    || bean.getDepartureDate().equals(depart)||
+                    && bean.getDepartureDate().equals(depart)&&
                     bean.getArrivalDate().equals(ret)
             ){
                 return true;
@@ -36,4 +36,15 @@ public class GetFlightsService {
 	  }
 	return false;
 	  }
+	    public static String parseDateString(String htmlDate){
+	        //html date//(07/15/2001)
+	        String[] dateArr;
+	        dateArr=htmlDate.split("/");
+	        String month = dateArr[0];
+	        String day = dateArr[1];
+	        String year = dateArr[2];
+	        String sqlDate = year+"-"+month+"-"+day;
+	        return sqlDate;
+	}
+
 }

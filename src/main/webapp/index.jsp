@@ -35,16 +35,16 @@
 							<option value="JFK">JFK</option>
 						</select> TO <select style="align-content: center" id="DestSelect"
 							name="destination" required>
-							<option value="DFW">DFW</option>
 							<option value="TIA">TIA</option>
+							<option value="DFW">DFW</option>
 							<option value="JFK">JFK</option>
 
 						</select>
 					</p>
 				</div>
 				<h4 align="center">
-					Depart <input type="date" name="departDate"> Return <input
-						type="date" name="returnDate">
+					Depart <input type="date" name="departDate"  value ="07/19/2021" required> Return <input
+						type="date" name="returnDate" value ="07/19/2021" required>
 				</h4>
 				<h4 align="center" style="align-content: center">
 					<input type="submit" name="getFlights" value="Show Flights">

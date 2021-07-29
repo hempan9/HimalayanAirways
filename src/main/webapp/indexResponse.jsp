@@ -1,3 +1,4 @@
+<%@page import="java.awt.Color"%>
 <%@ page import="java.io.PrintWriter"%>
 <%@ page import="com.hmp.dao.FlighDetailsDAO"%>
 <%@ page import="com.hmp.service.GetFlightsService"%>
@@ -25,28 +26,28 @@ for (FlightsBean flightsBean : bean) {
 <html>
 <head>
 <title>Search Flights-Using Flight Number</title>
-<link rel="stylesheet" href="style.css">
-<ul>
-	<li><a class="active" href="index.jsp">Home</a></li>
-	<li><a href="login.jsp">Login</a></li>
-	<li><a href="register.jsp">Register</a></li>
-	<li><a href="about.html>About</a></li>
-</ul>
-
 <h1 align="center"><img alt="logo" src="logo.png" style="width:200px"><br>Himalayan Airways<br>Quality Service is Our Motto</h1>
-<h2 align="center">
-	Search results for flight number:<style=color:green> <% out.print(flightsBean.getFlightNumber());
-%>
-		</h2>
+
+<link rel="stylesheet" href="style.css">
 <style>
 table, th, td {
   border: 3px solid blue;
 }
 </style>
 
+<ul>
+	<li><a class="active" href="index.jsp">Home</a></li>
+	<li><a href="login.jsp">Login</a></li>
+	<li><a href="register.jsp">Register</a></li>
+	<li><a href="about.html">About></a> </li>
+</ul>
+
+<h2 align="center">Search results for flight number: <% out.print(flightsBean.getFlightNumber());
+%></h2>
+
 </head>
 <body>
-	<form action="flightInfo">
+<div class="homeDiv">
 		<table style="width: 100%">
 			<tr>
 				<th>Flight Number</th>
@@ -82,19 +83,20 @@ table, th, td {
 				</td>
 				<td>
 					<%
-					out.println( flightsBean.getDepartureDate());
+					out.println( flightsBean.getArrivalDate());
 					%>
 				</td>
-				<td>Ready To Go</td>
+				<td><input type="checkbox" checked>Ready To Go</td>
 			</tr>
 			
 		</table>
 
-		<%
+<%
 		}
 
 		}
-		%>
-	</form>
+%>
+		
+	</div>
 </body>
 </html>
